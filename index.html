@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FansPlans</title>
+  <style>
+    /* Reset margin and padding for all elements */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Background and layout for the homepage */
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('background-image.jpg'); /* Replace with a URL to a relevant background image */
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Main container styling */
+    .container {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      border-radius: 10px;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    /* Title styling */
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #ffcc00;
+    }
+
+    /* Subtitle styling */
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    /* Search bar styling */
+    .search-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .search-bar {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      border-radius: 5px 0 0 5px;
+      border: none;
+      outline: none;
+    }
+
+    .search-button {
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 0 5px 5px 0;
+      background-color: #ffcc00;
+      border: none;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .search-button:hover {
+      background-color: #ffdd33;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Main content container -->
+  <div class="container">
+    <h1>FansPlans</h1>
+    <p>Explore new adventures when you travel for events! Discover places to visit, eat, and experience near your favorite sports events, concerts, and festivals.</p>
+
+    <!-- Search bar -->
+    <div class="search-container">
+      <input type="text" class="search-bar" placeholder="Search city, state, or country...">
+      <button class="search-button">Search</button>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript to add a search functionality (example only) -->
+  <script>
+    document.querySelector('.search-button').addEventListener('click', () => {
+      const query = document.querySelector('.search-bar').value;
+      if (query) {
+        // Later, we can connect this to an actual search function
+        alert(`Searching for things to do in ${query}...`);
+      } else {
+        alert('Please enter a location to search.');
+      }
+    });
+  </script>
+
+</body>
+</html>
